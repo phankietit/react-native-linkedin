@@ -94,7 +94,7 @@ exports[`<LinkedInModal /> render correctly 1`] = `
           resizeMode="contain"
           source={
             Object {
-              "testUri": "../../../src/assets/x-white.png",
+              "testUri": "../../../lib/assets/x-white.png",
             }
           }
           style={

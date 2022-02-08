@@ -1,81 +1,81 @@
 {
-  "name": "@smuxx/react-native-linkedin",
-  "version": "2.1.1",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "description": "React-Native LinkedIn, a simple LinkedIn login library for React-Native with WebView and Modal",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/smuxx/react-native-linkedin.git"
-  },
-  "author": "Xavier Carpentier <xcapetir@gmail.com> (https://xaviercarpentier.com/)",
-  "bugs": {
-    "url": "https://github.com/smuxx/react-native-linkedin/issues"
-  },
-  "homepage": "https://github.com/smuxx/react-native-linkedin",
-  "license": "MIT",
-  "scripts": {
-    "start": "yarn config:dev && expo start",
-    "build": "rm -rf lib/ && node_modules/.bin/tsc && cp -rf ./src/assets ./lib",
-    "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
-    "config:npm": "json -I -f package.json -e 'this.main=\"lib/index.js\"'",
-    "test": "TZ=Europe/Paris jest --no-watchman",
-    "lint": "tslint --project .",
-    "tsc": "tsc --noEmit",
-    "cleaning": "rm -rf node_modules && rm -f yarn.lock && yarn install && watchman watch-del-all && rm -fr $TMPDIR/react-*"
-  },
-  "keywords": [
-    "react-native",
-    "react-native-linkedin",
-    "linkedin"
-  ],
-  "dependencies": {
-    "query-string": "6.8.3",
-    "ramda": "0.26.1",
-    "uuid": "3.3.3"
-  },
-  "devDependencies": {
-    "@types/jest": "24.0.17",
-    "@types/ramda": "^0.25.47",
-    "@types/react": "~16.9.35",
-    "@types/react-native": "~0.63.2",
-    "@types/uuid": "^3.4.4",
-    "babel-jest": "24.9.0",
-    "babel-preset-expo": "^8.3.0",
-    "babel-preset-react-native": "^4.0.0",
-    "expo": "^39.0.0",
-    "jest-expo": "^39.0.0",
-    "json": "^9.0.6",
-    "react": "16.13.1",
-    "react-native": "0.63.3",
-    "react-native-webview": "10.7.0",
-    "react-test-renderer": "16.8.3",
-    "tslint": "5.12.0",
-    "tslint-config-prettier": "1.17.0",
-    "typescript": "~3.9.2"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "react-native-webview": "*"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "ts",
-      "tsx"
-    ],
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    "name": "@phankiet/react-native-linkedin",
+    "version": "2.1.5",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "description": "React-Native LinkedIn, a simple LinkedIn login library for React-Native with WebView and Modal",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phankietit/react-native-linkedin"
     },
-    "testMatch": [
-      "**/*.test.ts?(x)"
-    ]
-  },
-  "directories": {
-    "lib": "lib"
-  }
+    "author": "Xavier Carpentier <xcapetir@gmail.com> (https://xaviercarpentier.com/)",
+    "bugs": {
+        "url": "https://github.com/phankietit/react-native-linkedin/issues"
+    },
+    "homepage": "https://github.com/phankietit/react-native-linkedin",
+    "license": "MIT",
+    "scripts": {
+        "start": "yarn config:dev && expo start",
+        "build": "rm -rf lib/ && node_modules/.bin/tsc && cp -rf ./lib/assets ./lib",
+        "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
+        "config:npm": "json -I -f package.json -e 'this.main=\"lib/index.js\"'",
+        "test": "TZ=Europe/Paris jest --no-watchman",
+        "lint": "tslint --project .",
+        "tsc": "tsc --noEmit",
+        "cleaning": "rm -rf node_modules && rm -f yarn.lock && yarn install && watchman watch-del-all && rm -fr $TMPDIR/react-*"
+    },
+    "keywords": [
+        "react-native",
+        "react-native-linkedin",
+        "linkedin"
+    ],
+    "dependencies": {
+        "query-string": "6.8.3",
+        "ramda": "0.26.1",
+        "uuid": "3.3.3"
+    },
+    "devDependencies": {
+        "@types/jest": "24.0.17",
+        "@types/ramda": "^0.25.47",
+        "@types/react": "~16.9.35",
+        "@types/react-native": "~0.63.2",
+        "@types/uuid": "^3.4.4",
+        "babel-jest": "24.9.0",
+        "babel-preset-expo": "^8.3.0",
+        "babel-preset-react-native": "^4.0.0",
+        "expo": "^39.0.0",
+        "jest-expo": "^39.0.0",
+        "json": "^9.0.6",
+        "react": "16.13.1",
+        "react-native": "0.63.3",
+        "react-native-webview": "10.7.0",
+        "react-test-renderer": "16.8.3",
+        "tslint": "5.12.0",
+        "tslint-config-prettier": "1.17.0",
+        "typescript": "~3.9.2"
+    },
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*",
+        "react-native-webview": "*"
+    },
+    "jest": {
+        "preset": "react-native",
+        "moduleFileExtensions": [
+            "js",
+            "jsx",
+            "json",
+            "ts",
+            "tsx"
+        ],
+        "transform": {
+            "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+        },
+        "testMatch": [
+            "**/*.test.ts?(x)"
+        ]
+    },
+    "directories": {
+        "lib": "lib"
+    }
 }

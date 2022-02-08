@@ -12,7 +12,7 @@ import LinkedInModal, {
   fetchToken,
   logError,
   onLoadStart,
-} from '../src'
+} from '../lib'
 
 // jest.mock('WebView', () => 'WebView')
 

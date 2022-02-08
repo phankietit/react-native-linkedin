@@ -10,7 +10,7 @@ import {
 
 import { CLIENT_ID, CLIENT_SECRET, REDIRECT_URL } from './config'
 
-import LinkedInModal, { LinkedInToken } from './src/'
+import LinkedInModal, { LinkedInToken } from './lib'
 
 const styles = StyleSheet.create({
   container: {
